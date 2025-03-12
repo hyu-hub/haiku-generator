@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俳句 - Haiku Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="theme-toggle">
+            <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+        </div>
+        <h1>俳句 Generator</h1>
+        <div class="haiku-container">
+            <div class="haiku-display">
+                <div class="japanese-text" id="japaneseHaiku">
+                    <!-- Japanese haiku will be displayed here -->
+                </div>
+                <div class="english-text" id="englishHaiku">
+                    <!-- English translation will be displayed here -->
+                </div>
+            </div>
+            <button id="generateButton" class="generate-btn">
+                <span class="icon">🌸</span>
+                Generate Haiku
+            </button>
+            <button id="shareButton" class="share-btn">
+                <span class="icon">📤</span>
+                Share Haiku
+            </button>
+        </div>
+    </div>
+    <script src="haiku-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
