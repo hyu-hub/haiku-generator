@@ -210,8 +210,8 @@ function generateLine(syllableTarget, season, previousTheme = null, isMiddleLine
             () => {
                 const natureWord = getRandomItem(haikuData[season].two.filter(w => 
                     w.theme === selectedTheme || w.theme === 'nature'));
-                const actionWord = getRandomItem(haikuData[season].three.filter(w => 
-                    w.theme !== natureWord.theme));
+                const actionWord = natureWord ? getRandomItem(haikuData[season].three.filter(w => 
+                    w.theme !== natureWord.theme)) : null;
                 return natureWord && actionWord ? [natureWord, actionWord] : null;
             },
             // Complete scene (5)
